@@ -25,8 +25,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/21.12.1/src/cantor-21.12.1.tar.xz",
-                    "sha256": "e1ed91e0488ea8483ed9ddc6ab88a8e486fddfe4cb8176831c652fc445a79b50"
+                    "url": "https://download.kde.org/stable/release-service/21.12.2/src/cantor-21.12.2.tar.xz",
+                    "sha256": "e85c356bf91896f56a4759270e45c202dd956a557b252772f18338fadaf6086f"
                 },
                 {
                     "type": "patch",
