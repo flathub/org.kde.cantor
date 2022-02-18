@@ -1,0 +1,87 @@
+{
+    "id": "org.kde.cantor",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-21.08",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "5.15-21.08",
+    "sdk": "org.kde.Sdk",
+    "command": "cantor",
+    "rename-icon": "cantor",
+    "finish-args": [
+        "--share=network",
+        "--share=ipc",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--filesystem=xdg-documents",
+        "--device=dri",
+        "--socket=pulseaudio",
+        "--share=network",
+        "--filesystem=host",
+        "--talk-name=com.canonical.AppMenu.Registrar",
+        "--talk-name=org.freedesktop.Flatpak",
+        "--env=PATH=/app/bin:/usr/bin:/app/jre/bin",
+        "--env=CPPFLAGS=-I/app/include",
+        "--env=LDFLAGS=-L/app/lib",
+        "--env=LD_LIBRARY_PATH=/app/lib",
+        "--env=OCTAVE_HOME=/app",
+        "--env=PKG_CONFIG_PATH=/app/lib/pkgconfig:/app/share/pkgconfig"
+    ],
+    "cleanup": [
+        "/bin/*lpr*.sh",
+        "/bin/GraphicsMagick*config",
+        "/bin/fltk-config",
+        "/bin/gif2h5",
+        "/bin/glpsol",
+        "/bin/h5*",
+        "/bin/isympy",
+        "/bin/qconvex",
+        "/bin/qdelaunay",
+        "/bin/qhalf",
+        "/bin/qhull",
+        "/bin/qvoronoi",
+        "/bin/rbox",
+        "/com",
+        "/examples",
+        "/include/QSci",
+        "/lib/cmake",
+        "/lib/lib*.a",
+        "/lib/lib*.la",
+        "/lib/lib*.settings",
+        "/lib/libqhull_*",
+        "/lib/octave/*/lib*.la",
+        "/man",
+        "/share/*.txt",
+        "/share/COPYING",
+        "/share/applications/fluid.desktop",
+        "/share/doc",
+        "/share/fltk",
+        "/share/hdf5_examples",
+        "/share/man",
+        "/share/units/locale_map.txt",
+        "/share/zmq",
+        "fluid",
+        "fluid.*"
+  ],
+    "modules": [
+        "shared-modules/glu/glu-9.json",
+        "python3-requirements.json",
+        "poppler.json",
+        "analitza.json",
+        "octave.json",
+        {
+            "name": "cantor",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/release-service/21.12.2/src/cantor-21.12.2.tar.xz",
+                    "sha256": "e85c356bf91896f56a4759270e45c202dd956a557b252772f18338fadaf6086f"
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata.patch"
+                }
+            ]
+        }
+    ]
+}
