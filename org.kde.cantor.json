@@ -16,7 +16,7 @@
         "--device=dri",
         "--socket=pulseaudio",
         "--share=network",
-        "--filesystem=host",
+        "--filesystem=home",
         "--talk-name=com.canonical.AppMenu.Registrar",
         "--talk-name=org.freedesktop.Flatpak",
         "--env=PATH=/app/bin:/usr/bin:/app/jre/bin",
@@ -32,6 +32,7 @@
         "poppler.json",
         "analitza.json",
         "octave.json",
+        "scilab.json",
         {
             "name": "cantor",
             "buildsystem": "cmake-ninja",
