@@ -29,6 +29,7 @@
     "modules": [
         "shared-modules/glu/glu-9.json",
         "python3-requirements.json",
+        "sagemath.json",
         "poppler.json",
         "analitza.json",
         "octave.json",
