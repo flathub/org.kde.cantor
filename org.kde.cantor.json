@@ -33,6 +33,7 @@
         "analitza.json",
         "octave.json",
         "scilab.json",
+        "maxima.json",
         {
             "name": "cantor",
             "buildsystem": "cmake-ninja",

@@ -1,0 +1,51 @@
+{
+    "name": "maxima",
+    "config-opts": [
+        "--enable-clisp",
+        "--enable-gettext",
+        "--disable-recode",
+        "--enable-mathjax"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "http://download.sourceforge.net/maxima/maxima-5.45.1.tar.gz",
+            "sha256": "fe9016276970bef214a1a244348558644514d7fdfaa4fc8b9d0e87afcbb4e7dc"
+        }
+    ],
+    "modules": [
+        {
+            "name": "libsigsegv",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-2.14.tar.gz",
+                    "sha256": "cdac3941803364cf81a908499beb79c200ead60b6b5b40cad124fd1e06caa295",
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.gnu.org/software/libsigsegv/",
+                        "pattern": "(https://ftp.gnu.org/gnu/libsigsegv/libsigsegv-([\\d\\.]+).tar.gz)"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "clisp",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.com/gnu-clisp/clisp/-/archive/clisp-2.50/clisp-clisp-2.50.tar.bz2",
+                    "sha256": "15e210486d9e0308f70e5f083b044a4e9e78919729ec33b87290b479ecb7c45e"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                    "cp -p /usr/share/automake-*/config.{sub,guess} src/build-aux"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
