@@ -27,10 +27,6 @@
                     "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/22.04.0/src/cantor-22.04.0.tar.xz",
                     "sha256": "b74eda7c7c2dd303fd116b9f2868db1121d428cc721889c8c871a2fab7e147e7"
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
                 }
             ]
         }
