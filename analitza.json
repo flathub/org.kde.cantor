@@ -4,8 +4,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://download.kde.org/stable/release-service/22.04.0/src/analitza-22.04.0.tar.xz",
-            "sha256": "0c2b3666982875176bfeb296a9161cc4da2e77673e4f897f9344e8d4533ff15a"
+            "url": "https://download.kde.org/stable/release-service/22.04.2/src/analitza-22.04.2.tar.xz",
+            "sha256": "d83cfe22c5e5111273cd8d3f2c3d03e7cf516d24935be8ef35551e026ef7ec69"
         }
     ]
 }
