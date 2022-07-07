@@ -25,8 +25,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.04.2/src/cantor-22.04.2.tar.xz",
-                    "sha256": "56b398ead16f02f3ea700702e4c007ee78e2717dab09ee07d89cd02a67e41ec8"
+                    "url": "https://download.kde.org/stable/release-service/22.04.3/src/cantor-22.04.3.tar.xz",
+                    "sha256": "0346dc2ffcc33e1a3ea7b4bec2ff50d57a388b54c867be803b7cf1149d01fd00"
                 }
             ]
         }
