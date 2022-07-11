@@ -26,7 +26,13 @@
                 {
                     "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/22.04.3/src/cantor-22.04.3.tar.xz",
-                    "sha256": "0346dc2ffcc33e1a3ea7b4bec2ff50d57a388b54c867be803b7cf1149d01fd00"
+                    "sha256": "0346dc2ffcc33e1a3ea7b4bec2ff50d57a388b54c867be803b7cf1149d01fd00",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8763,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/cantor-$version.tar.xz"
+                    }
                 }
             ]
         }
