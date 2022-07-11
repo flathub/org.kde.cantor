@@ -5,7 +5,13 @@
         {
             "type": "archive",
             "url": "https://download.kde.org/stable/release-service/22.04.3/src/analitza-22.04.3.tar.xz",
-            "sha256": "ac8b6c8e5609e6126740fe2c443642e18a2a05f90745fe239d903afe3b55a922"
+            "sha256": "ac8b6c8e5609e6126740fe2c443642e18a2a05f90745fe239d903afe3b55a922",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 8763,
+                "stable-only": true,
+                "url-template": "https://download.kde.org/stable/release-service/$version/src/analitza-$version.tar.xz"
+            }
         }
     ]
 }
