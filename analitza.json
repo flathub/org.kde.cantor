@@ -4,8 +4,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://download.kde.org/stable/release-service/22.08.0/src/analitza-22.08.0.tar.xz",
-            "sha256": "6ad0be4fb19ddaf380339f89bf411f63d8696a0cecbc772bbbaaffb0852257d8",
+            "url": "https://download.kde.org/stable/release-service/22.08.1/src/analitza-22.08.1.tar.xz",
+            "sha256": "dae381e0ee1e80983a6e3b889c70ac6886ca25929dc167597fd36c26345f550c",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 8763,
