@@ -13,8 +13,14 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://poppler.freedesktop.org/poppler-22.01.0.tar.xz",
-            "sha256": "7d3493056b5b86413e5c693c2cae02c5c06cd8e618d14c2c31e2c84b67b2313e"
+            "url": "https://poppler.freedesktop.org/poppler-22.10.0.tar.xz",
+            "sha256": "04e40fad924a6de62e63017a6fd4c04696c1f526dedc2ba5ef275cedf646292a",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 3686,
+                "stable-only": true,
+                "url-template": "https://poppler.freedesktop.org/poppler-$version.tar.xz"
+            }
         }
     ],
     "modules": [
@@ -26,8 +32,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/uclouvain/openjpeg/archive/refs/tags/v2.4.0.tar.gz",
-                    "sha256": "8702ba68b442657f11aaeb2b338443ca8d5fb95b0d845757968a7be31ef7f16d"
+                    "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.0.tar.gz",
+                    "sha256": "0333806d6adecc6f7a91243b2b839ff4d2053823634d4f6ed7a59bc87409122a",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 2550,
+                        "stable-only": true,
+                        "url-template": "https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
