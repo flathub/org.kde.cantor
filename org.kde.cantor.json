@@ -1,9 +1,9 @@
 {
     "id": "org.kde.cantor",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-21.08",
+    "runtime-version": "5.15-22.08",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-21.08",
+    "base-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "cantor",
     "rename-icon": "cantor",
@@ -26,7 +26,13 @@
                 {
                     "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/21.12.1/src/cantor-21.12.1.tar.xz",
-                    "sha256": "e1ed91e0488ea8483ed9ddc6ab88a8e486fddfe4cb8176831c652fc445a79b50"
+                    "sha256": "e1ed91e0488ea8483ed9ddc6ab88a8e486fddfe4cb8176831c652fc445a79b50",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 368663,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/unstable/release-service/$version/src/cantor-$version.tar.xz"
+                    }
                 },
                 {
                     "type": "patch",
