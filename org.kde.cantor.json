@@ -19,6 +19,7 @@
     "modules": [
         "poppler.json",
         "analitza.json",
+        "octave.json",
         {
             "name": "cantor",
             "buildsystem": "cmake-ninja",
