@@ -264,7 +264,7 @@
                     "project-id": 4908,
                     "url-template": "https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/v$version.tar.gz"
                 }
-            },
+            }
         ]
     },
     {
@@ -477,7 +477,7 @@
                     "project-id": 5048,
                     "url-template": "https://mirror.its.dal.ca/gnu/units/units-$version.tar.gz"
                 }
-            },
+            }
         ],
         "post-install": [
             "mv -f /app/com/units/currency.units /app/share/units/currency.units"
