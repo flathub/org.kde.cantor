@@ -118,7 +118,7 @@
                 "x-checker-data": {
                     "type": "anitya",
                     "project-id": 1157,
-                    "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs$version/ghostpdl-$version.tar.xz"
+                    "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${major}0$minor$patch/ghostscript-$version.tar.xz"
                 }
             }
         ]
