@@ -265,10 +265,6 @@
                     "url-template": "https://github.com/DrTimothyAldenDavis/SuiteSparse/archive/v$version.tar.gz"
                 }
             },
-            {
-                "type": "patch",
-                "path": "suitesparse-reduce-build.patch"
-            }
         ]
     },
     {
@@ -482,10 +478,6 @@
                     "url-template": "https://mirror.its.dal.ca/gnu/units/units-$version.tar.gz"
                 }
             },
-            {
-                "type": "patch",
-                "path": "units-install-info.patch"
-            }
         ],
         "post-install": [
             "mv -f /app/com/units/currency.units /app/share/units/currency.units"
