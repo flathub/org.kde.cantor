@@ -113,12 +113,12 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9550/ghostscript-9.55.0.tar.xz",
-                "sha256": "6ee3057773646d6a2c6d117eb53a17d6752feadc513828e4322f68b7b7789ff6",
+                "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.xz",
+                "sha256": "48d079242a2ca02a2e47a76a52cdfa818b2ad769c2bab00ad0497dd13560e7e7",
                 "x-checker-data": {
                     "type": "anitya",
                     "project-id": 1157,
-                    "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs$major$minor$patch/ghostpdl-$version.tar.xz"
+                    "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs$version/ghostpdl-$version.tar.xz"
                 }
             }
         ]
@@ -407,8 +407,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.11.6/QScintilla-2.11.6.tar.gz",
-                "sha256": "e7346057db47d2fb384467fafccfcb13aa0741373c5d593bc72b55b2f0dd20a7",
+                "url": "https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.1/QScintilla_src-2.14.1.tar.gz",
+                "sha256": "dfe13c6acc9d85dfcba76ccc8061e71a223957a6c02f3c343b30a9d43a4cdd4d",
                 "x-checker-data": {
                     "type": "anitya",
                     "project-id": 37195,
@@ -474,12 +474,12 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://ftpmirror.gnu.org/units/units-2.21.tar.gz",
-                "sha256": "6c3e80a9f980589fd962a5852a2674642257db1c5fd5b27c4d9e664f3486cbaf",
+                "url": "https://mirror.its.dal.ca/gnu/units/units-2.22.tar.gz",
+                "sha256": "5d13e1207721fe7726d906ba1d92dc0eddaa9fc26759ed22e3b8d1a793125848",
                 "x-checker-data": {
                     "type": "anitya",
                     "project-id": 5048,
-                    "url-template": "https://ftpmirror.gnu.org/units/units-$version.tar.gz"
+                    "url-template": "https://mirror.its.dal.ca/gnu/units/units-$version.tar.gz"
                 }
             },
             {
