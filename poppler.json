@@ -6,7 +6,8 @@
         "-DENABLE_CPP=OFF",
         "-DENABLE_GLIB=OFF",
         "-DENABLE_GOBJECT_INTROSPECTION=OFF",
-        "-DENABLE_UTILS=OFF"
+        "-DENABLE_UTILS=OFF",
+        "-DENABLE_QT6=OFF"
     ],
     "buildsystem": "cmake-ninja",
     "builddir": true,
