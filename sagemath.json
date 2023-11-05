@@ -1,0 +1,22 @@
+{
+    "name": "sagemath",
+    "config-opts": [
+        "--disable-silent-rules",
+        "--disable-rpath"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "http://files.sagemath.org/src/sage-9.5.tar.gz",
+            "sha256": "d34f957407a349fdef8bea1cb80145edfecc3a6f1cf84f99df7ac102d0eee4e7",
+            "x-checker-data": {
+                "type": "anitya",
+                "project-id": 4756,
+                "url-template": "http://files.sagemath.org/src/sage-$version.tar.gz"
+            }
+        }
+    ]
+}
+
+
+
