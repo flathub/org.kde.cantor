@@ -8,12 +8,12 @@
     "command": "cantor",
     "rename-icon": "cantor",
     "finish-args": [
-        "--share=network",
-        "--share=ipc",
-        "--socket=fallback-x11",
-        "--socket=wayland",
+        "--device=dri",
         "--filesystem=xdg-documents",
-        "--device=dri"
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=wayland"
     ],
     "modules": [
         "poppler.json",
