@@ -24,8 +24,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.05.2/src/cantor-24.05.2.tar.xz",
-                    "sha256": "41fb9b47ab194d393e4ff33f3afba24267b409f30801c09934f05c52e7ba533f",
+                    "url": "https://download.kde.org/stable/release-service/24.08.0/src/cantor-24.08.0.tar.xz",
+                    "sha256": "5292977d1a96e30d62011532aa642d3071b751f3c9656371401e0ee8d9e7092f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
