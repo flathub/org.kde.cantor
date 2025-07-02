@@ -1,9 +1,9 @@
 {
     "id": "org.kde.cantor",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "6.8",
+    "base-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "cantor",
     "rename-icon": "cantor",
@@ -16,8 +16,83 @@
         "--socket=wayland"
     ],
     "modules": [
-        "poppler.json",
-        "analitza.json",
+        {
+            "name": "poppler",
+            "config-opts": [
+                "-DBUILD_CPP_TESTS=OFF",
+                "-DBUILD_GTK_TESTS=OFF",
+                "-DBUILD_QT5_TESTS=OFF",
+                "-DBUILD_QT6_TESTS=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DENABLE_CPP=OFF",
+                "-DENABLE_GLIB=OFF",
+                "-DENABLE_GOBJECT_INTROSPECTION=OFF",
+                "-DENABLE_QT5=OFF",
+                "-DENABLE_QT6=ON",
+                "-DENABLE_TESTING=OFF",
+                "-DENABLE_UNSTABLE_API_ABI_HEADERS=ON",
+                "-DENABLE_UTILS=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://poppler.freedesktop.org/poppler-25.06.0.tar.xz",
+                    "sha256": "8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3686,
+                        "stable-only": true,
+                        "url-template": "https://poppler.freedesktop.org/poppler-$version.tar.xz"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "boost",
+                    "buildsystem": "simple",
+                    "build-commands": [
+                        "./bootstrap.sh --prefix=/app --with-libraries=system",
+                        "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.bz2",
+                            "sha256": "46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 6845,
+                                "stable-only": true,
+                                "url-template": "https://archives.boost.io/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
+            ]
+        },
+        {
+            "name": "analitza",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/release-service/25.04.2/src/analitza-25.04.2.tar.xz",
+                    "sha256": "47177e0a8400e108491b769b825ef4990f3dd97b3348eec182da3e65e5704db7",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8763,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/analitza-$version.tar.xz"
+                    }
+                }
+            ]
+        },
         {
             "name": "cantor",
             "buildsystem": "cmake-ninja",
