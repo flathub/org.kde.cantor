@@ -114,6 +114,7 @@
                     "url": "https://download.kde.org/stable/release-service/25.12.2/src/cantor-25.12.2.tar.xz",
                     "sha256": "d72152513ef5fcd93c520ff2dc1d4b6decbddf1e7be98cb811b465b57972b823",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
