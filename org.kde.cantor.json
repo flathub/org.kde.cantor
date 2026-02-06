@@ -21,7 +21,13 @@
         "/lib/pkgconfig",
         "/lib/*/cmake",
         "/lib/*/pkgconfig",
-        "/mkspecs"
+        "/mkspecs",
+        "/share/doc",
+        "*.la",
+        "*.a"
+    ],
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
     ],
     "modules": [
         {
