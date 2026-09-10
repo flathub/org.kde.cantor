@@ -52,8 +52,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-26.06.0.tar.xz",
-                    "sha256": "4cb4e5a3dc8cb5eec751c8a23c8ba19f61f96dedc0cd07d2aee6b0c8e2cf6ba4",
+                    "url": "https://poppler.freedesktop.org/poppler-26.08.0.tar.xz",
+                    "sha256": "dc906e68cea698109706ac6aa3d2c9d4512fcfcac42d90b8afcda486d1b9abd0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -73,8 +73,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2",
-                            "sha256": "49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305",
+                            "url": "https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2",
+                            "sha256": "5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 6845,
@@ -96,8 +96,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/analitza-26.04.3.tar.xz",
-                    "sha256": "615b7c244a5baee0be5214c53b8ce37d0a54e69a6fd6b8438c30d7fda45b0746",
+                    "url": "https://download.kde.org/stable/release-service/26.08.1/src/analitza-26.08.1.tar.xz",
+                    "sha256": "4719c9c39d6f34862cafc6f5e4e3b0f88fb996167b46fea0415e0396ea545db8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -117,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.3/src/cantor-26.04.3.tar.xz",
-                    "sha256": "f0e9734410070b6ecb54dfe042862405b4ef01d65533c0be0386d13b9fdf7250",
+                    "url": "https://download.kde.org/stable/release-service/26.08.1/src/cantor-26.08.1.tar.xz",
+                    "sha256": "5935a4cbd47d0dc84122d56e968c8bdd5416f8b9a69b8f97f42f791b526dc3b0",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
